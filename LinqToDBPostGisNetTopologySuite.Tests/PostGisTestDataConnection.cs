@@ -13,10 +13,10 @@ namespace LinqToDBPostGisNetTopologySuite.Tests
 
         }
 
-        public ITable<OwmCityEntity> OwmCities { get { return GetTable<OwmCityEntity>(); } }
+        public ITable<OwmCityEntity> OwmCities { get { return this.GetTable<OwmCityEntity>(); } }
 
-        public ITable<TestGeometryEntity> TestGeometries { get { return GetTable<TestGeometryEntity>(); } }
+        public ITable<TestGeometryEntity> TestGeometries { get { return this.GetTable<TestGeometryEntity>(); } }
 
-        public ITable<TestGeographyEntity> TestGeographies { get { return GetTable<TestGeographyEntity>(); } }
+        public ITable<TestGeographyEntity> TestGeographies { get { return this.GetTable<TestGeographyEntity>(); } }
     }
 }
