@@ -21,6 +21,7 @@ namespace LinqToDBPostGisNetTopologySuite.Tests
         public void OneTimeSetUp()
         {
             NpgsqlConnection.GlobalTypeMapper.UseNetTopologySuite();
+            NpgsqlConnection.GlobalTypeMapper.MapPostGisTypes();
 
             using (var db = new PostGisTestDataConnection(TestDatabaseConnectionString))
             {
